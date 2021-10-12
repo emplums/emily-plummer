@@ -62,7 +62,7 @@ const Blurb = ({themeName}) => {
             <Text>I am a Senior Software Engineer</Text>
             <Text>I specialize in Design Systems & Front End Engineering</Text>
             <Text>I have {getExperience(timeType)} <TimeSelect value={timeType} onChange={handleChange}/> of experience</Text>
-            <Text>I've worked as a Design Systems Engineer at GitHub, and a Front End Engineer at Buffer, Opal, and Experts Exchange.</Text>
+            <Text>I&aposve worked as a Design Systems Engineer at GitHub, and a Front End Engineer at Buffer, Opal, and Experts Exchange.</Text>
             <Text>I love community, and in the past I founded and ran <Link href="https://donutjs.club">Donut.js</Link> (a tech meetup) and <Link href="https://plantconf.com">PlantConf</Link> (a parody tech conference about plants).</Text>
 
             {isHalloween && 
