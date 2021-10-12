@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import React, {useState} from 'react'
 import { ThemeProvider} from 'styled-components'
-import  {ContentWrapper, Wrapper, Blurb, Header, Intro, Button, ButtonLink} from './components'
-import { cowboy, primary, lisaFrank, halloween } from './theme'
+import  {ContentWrapper, Wrapper, Blurb, Header, Intro, ButtonLink} from '../components'
+import { cowboy, primary, lisaFrank, halloween } from '../components/theme'
 import { Normalize } from 'styled-normalize'
 
 const themeMap = {
