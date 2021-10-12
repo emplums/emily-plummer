@@ -66,7 +66,7 @@ const Blurb = ({themeName}) => {
             <Text>I love community, and in the past I founded and ran <Link href="https://donutjs.club">Donut.js</Link> (a tech meetup) and <Link href="https://plantconf.com">PlantConf</Link> (a parody tech conference about plants).</Text>
 
             {isHalloween && 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/AxcM3nCsglA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AxcM3nCsglA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             }
 
             <DogButton/>
