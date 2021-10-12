@@ -45,7 +45,7 @@ export const cowboy = {
   button: {
     bg: {
       default: '#FF5733',
-      hover: '#fff'
+      hover: '#000'
     },
     color: '#fff',
     shadow: {
@@ -75,7 +75,7 @@ export const lisaFrank = {
   button: {
     bg: {
       default: '#FF33FC',
-      hover: '#fff'
+      hover: '#7DDDCB'
     },
     color: '#fff',
     shadow: {
