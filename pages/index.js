@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React, {useState} from 'react'
 import { ThemeProvider} from 'styled-components'
-import  {ContentWrapper, Wrapper, Blurb, Header, Intro, ButtonLink} from '../components'
+import  {ContentWrapper, Link, Wrapper, Blurb, Header, Intro, ButtonLink} from '../components'
 import { cowboy, primary, lisaFrank, halloween } from '../components/theme'
 import { Normalize } from 'styled-normalize'
 
@@ -29,6 +29,7 @@ export default function Home() {
               <ButtonLink onClick={() => setTheme('cowboy')}>cowboy theme</ButtonLink>
               <ButtonLink onClick={() => setTheme('lisaFrank')}>lisa frank theme</ButtonLink>
               <ButtonLink onClick={() => setTheme('halloween')}>halloween (limited edition!)</ButtonLink>
+              <Link style={{marginLeft: 'auto', marginRight: '10px', alignSelf: 'center'}} href="/resume.pdf" download>Resume</Link>
             </Header>
             <ContentWrapper>
               <Intro>
