@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
-import {Text} from './'
+import {Text, DogButton, Link} from './'
 
 const calcTime = (type, diff) => {
     const divisorMap = {
@@ -24,9 +24,13 @@ const getExperience = (timeType) => {
 }
 
 const StyledBlurb = styled.div`
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
     padding: 20px;
+    border-radius: 45px;
+    margin-top: 20px;
 `
 
 const StyledSelect = styled.select`
@@ -52,17 +56,20 @@ const Blurb = ({themeName}) => {
         setTimeType(e.target.value)
     }
     const isHalloween = themeName === 'halloween'
-    console.log('theme:', themeName)
-    console.log('stuffasfksafds')
+
     return (
         <StyledBlurb>
             <Text>I am a Senior Software Engineer</Text>
             <Text>I specialize in Design Systems & Front End Engineering</Text>
             <Text>I have {getExperience(timeType)} <TimeSelect value={timeType} onChange={handleChange}/> of experience</Text>
+            <Text>I've worked as a Design Systems Engineer at GitHub, and a Front End Engineer at Buffer, Opal, and Experts Exchange.</Text>
+            <Text>I love community, and in the past I founded and ran <Link href="https://donutjs.club">Donut.js</Link> (a tech meetup) and <Link href="https://plantconf.com">PlantConf</Link> (a parody tech conference about plants).</Text>
 
             {isHalloween && 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/AxcM3nCsglA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             }
+
+            <DogButton/>
         </StyledBlurb>
     )
 }
